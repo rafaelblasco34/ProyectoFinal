@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1f5ee6;
+    color: #dddada;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #0444f7;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #a6aaa6;
+    font-size: 2.5em;
+    margin-top: 10px;
+    animation: slideIn 1s ease-out;
+}
+
+header p {
+    color: #1d1c1c;
+    font-size: 1.1em;
+    animation: fadeIn 1.5s ease-in-out 0.5s;
+}
+
+.profile-img img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #e9e9e9;
+}
+
+.contact-info {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #c9c6c6;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #cacaca;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    list-style-type: none;
+}
+
+.skills li {
+    font-size: 1.2em;
+    margin: 8px 0;
+    transition: transform 0.3s ease-in-out;
+}
+.profile-img{
+    font-size: 1.2em;
+    margin: 8px 0;
+    transition: all 0.3s ease-in-out; 
+}
+.profile-img:hover{
+   transform: scale(1.5);
+}
+.skills li:hover {
+    transform: translateX(10px);
+}
+
+.job ul {
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.company {
+    font-weight: bold;
+    color: #b5b8b5;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1em;
+    color: #161616;
+}
+
+footer p {
+    animation: fadeIn 2s ease-in-out;
+}
+.animacion-texto {
+    font-size: 2rem;
+    margin: 8px 0;
+    animation: fadeInMove 3s ease-in-out infinite;
+  }
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(-30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
